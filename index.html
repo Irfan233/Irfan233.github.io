@@ -9,11 +9,13 @@
 </head>
 <body background="lap.jpg">
     <div class="navbar">
+        <span id="confetti" style="float:left; font-size: 35px; cursor: pointer;">👨🏽&zwj;💻</span>
         <a href="#" class="left" text-size="50px">Tech world</a>
         <a href="#">Home</a>
         <a href="#">Blog</a>
         <a href="#">services</a>
         <a href="#">Contact</a>
+        
     </div>
 
 <div class="header">
@@ -154,6 +156,16 @@
     
     <p class="end">Design By<span> <i class="fa-solid fa-brain"></i>   <i class="fa-solid fa-face-smile"></i>  © Irfanchoudhary 2023.</span></p>
     </footer>
+    <script src="confetti.min.js"></script>
+
+
+    <script>
+        let confetti = new Confetti("confetti");
+        confetti.setCount(300);
+        confetti.setPower(35);
+        confetti.setSize(1);
+        confetti.destroyTarget(false);
+    </script>
 
 </body>
 </html>
